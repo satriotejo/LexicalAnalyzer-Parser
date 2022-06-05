@@ -1,0 +1,12 @@
+.card {
+    margin: auto;
+    margin-top: 50px;
+}
+.card-parser h5{
+    font-weight: bold;
+}
+
+.card-lexical h5{
+    font-weight: bold;
+}
+

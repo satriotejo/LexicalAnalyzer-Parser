@@ -1,27 +1,100 @@
+// Input Sentence User
+let inputValue = document.getElementById("inputlexical") 
+text = inputValue.toLowerCase()+"#";
 
-// Get input from User
-let text = document.getElementById('form-parser').value;
-let lower_case = text.toLowerCase();
+// Initialization
+const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+state_list =[];
 
-// Initiazation
-alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+transition_list = {}
 
-// Subjek state
-list_state = ['']
+// space before input string
+transition_list[["q0", "#"]] = "ACCEPT";
 
-var transition_table = {};
+// subjek mutter
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
 
-function transition_table(state,alphabet){
-    var result;
-    
-}
+// subjek vater
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
 
-// update transition
+// subjek bruter
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
 
-function lexicalAnalyzer(){
-    text = document.getElementById('input-parser').value;
-    document.getElementById("result-parser").innerHTML = text;
-    return false;
-}
+// subjek onkel
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
 
-lexicalAnalyzer();
+// subjek tante
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+
+// subjek ich
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+
+// subjek sie
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+
+// subjek wir
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+
+// subjek du
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+transition_list[["q0", "#"]] = "ACCEPT";
+
+const lexicalAnalyzer = () =>{
+    var idx_char = 0;
+    var state = 'q0';
+    var current_token = '';
+    while (state !== 'accept'){
+        var current_char = text[idx_char];
+        current_token += current_char;
+        state = transition_list[(state, current_char)];
+        if (state === ....){
+            document.getElementById("result-lexical").innerHTML = `Current Token: ${current_token} valid`;
+        }
+        if (state === "error"){
+            document.getElementById("result-lexical").innerHTML = "error";
+            break;
+        }
+        idx_char = idx_char + 1;
+    }
+    if (state === "accept"){
+        document.getElementById("result-lexical").innerHTML = `Semua Token di Input: ${inputValue} valid`;
+    } 
+  }
+

@@ -106,6 +106,222 @@ transition_list[["q7", ""]] = "ACCEPT";
 transition_list[["q7", " "]] = "q25";
 transition_list[["q25", " "]] = "q25";
 
+// verb  lessen
+transition_list[["q25", "l"]] = "q26";
+transition_list[["q26", "e"]] = "q27";
+transition_list[["q27", "s"]] = "q28";
+transition_list[["q28", "s"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb essen
+transition_list[["q25", "e"]] = "q27";
+transition_list[["q27", "s"]] = "q28";
+transition_list[["q28", "s"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb waschen
+transition_list[["q25", "w"]] = "q30";
+transition_list[["q30", "a"]] = "q31";
+transition_list[["q31", "s"]] = "q32";
+transition_list[["q32", "c"]] = "q33";
+transition_list[["q33", "h"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb sehen
+transition_list[["q25", "s"]] = "q34";
+transition_list[["q34", "e"]] = "q33";
+transition_list[["q33", "h"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb offen
+transition_list[["q25", "o"]] = "q35";
+transition_list[["q35", "f"]] = "q36";
+transition_list[["q36", "f"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+    
+// verb bekomen    
+transition_list[["q38", "k"]] = "q39";
+transition_list[["q39", "o"]] = "q40";
+transition_list[["q40", "m"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb benutzen
+transition_list[["q25", "b"]] = "q37";
+transition_list[["q37", "e"]] = "q38";
+transition_list[["q38", "n"]] = "q41";
+transition_list[["q41", "u"]] = "q42";
+transition_list[["q42", "t"]] = "q43";
+transition_list[["q43", "z"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb putzen
+transition_list[["q25", "p"]] = "q41";
+transition_list[["q41", "u"]] = "q42";
+transition_list[["q42", "t"]] = "q43";
+transition_list[["q43", "z"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// verb ritten 
+transition_list[["q25", "r"]] = "q44";
+transition_list[["q44", "i"]] = "q45";
+transition_list[["q45", "t"]] = "q46";
+transition_list[["q46", "t"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+    
+// verb finden
+transition_list[["q25", "f"]] = "q47";
+transition_list[["q47", "i"]] = "q48";
+transition_list[["q48", "n"]] = "q49";
+transition_list[["q49", "d"]] = "q29";
+transition_list[["q29", "e"]] = "q50";
+transition_list[["q50", "n"]] = "q51";
+transition_list[["q51", "#"]] = "ACCEPT";
+transition_list[["q51", ""]] = "ACCEPT";
+transition_list[["q51", " "]] = "q52";
+transition_list[["q52", " "]] = "q52";
+
+// objek  physik
+transition_list[["q52", "p"]] = "q53";
+transition_list[["q53", "h"]] = "q54";
+transition_list[["q54", "y"]] = "q55";
+transition_list[["q55", "s"]] = "q56";
+transition_list[["q56", "i"]] = "q57";
+transition_list[["q57", "k"]] = "q58";
+transition_list[["q58", "#"]] = "ACCEPT";
+
+// objek fleisch
+transition_list[["q52", "f"]] = "q59";
+transition_list[["q59", "l"]] = "q60";
+transition_list[["q60", "e"]] = "q66";
+transition_list[["q66", "i"]] = "q67";
+transition_list[["q67", "s"]] = "q68";
+transition_list[["q68", "c"]] = "q69";
+transition_list[["q69", "h"]] = "q58";
+transition_list[["q58", "#"]] = "ACCEPT";
+
+// objek konzert
+transition_list[["q52", "k"]] = "q70";
+transition_list[["q70", "o"]] = "q71";
+transition_list[["q71", "n"]] = "q72";
+transition_list[["q72", "z"]] = "q73";
+transition_list[["q73", "e"]] = "q74";
+transition_list[["q74", "r"]] = "q75";
+transition_list[["q75", "t"]] = "q58";
+transition_list[["q58", "#"]] = "ACCEPT";
+
+// objek kleid
+transition_list[["q52", "k"]] = "q70";
+transition_list[["q70", "l"]] = "q76";
+transition_list[["q76", "e"]] = "q77";
+transition_list[["q77", "i"]] = "q78";
+transition_list[["q78", "d"]] = "q58";
+transition_list[["q58", "#"]] = "ACCEPT";
+
+// objek schuh
+transition_list[["q52", "s"]] = "q81";
+transition_list[["q81", "c"]] = "q82";
+transition_list[["q82", "h"]] = "q83";
+transition_list[["q83", "u"]] = "q69";
+transition_list[["q69", "h"]] = "q58";
+transition_list[["q58", "#"]] = "ACCEPT";
+    
+// objek waschen
+    
+transition_list[["q52", "w"]] = "q95";
+transition_list[["q95", "a"]] = "q96";
+transition_list[["q96", "s"]] = "q97";
+transition_list[["q97", "c"]] = "q98";
+transition_list[["q98", "h"]] = "q99";
+transition_list[["q99", "e"]] = "q100";
+transition_list[["q100", "n"]] = "q58";
+transition_list[["q58", "#"]] = "ACCEPT";
+
+// objek wagen
+transition_list[["q52", "w"]] = "q95";
+transition_list[["q95", "a"]] = "q96";
+transition_list[["q96", "g"]] = "q99";
+transition_list[["q99", "e"]] = "q100";
+transition_list[["q100", "n"]] = "q58";
+transition_list[["q58", "#"]] = "ACCEPT";
+
+// objek lebensmittel
+transition_list[["q52", "l"]] = "q84";
+transition_list[["q84", "e"]] = "q85";
+transition_list[["q85", "b"]] = "q86";
+transition_list[["q86", "e"]] = "q87";
+transition_list[["q87", "n"]] = "q88";
+transition_list[["q88", "s"]] = "q89";
+transition_list[["q89", "m"]] = "q90";
+transition_list[["q90", "i"]] = "q91";
+transition_list[["q91", "t"]] = "q92";
+transition_list[["q92", "t"]] = "q93";
+transition_list[["q93", "e"]] = "q94";
+transition_list[["q94", "l"]] = "q58";
+transition_list[["q58", "#"]] = "ACCEPT";
+
+// objek flugzeug 
+transition_list[["q52", "f"]] = "q59";
+transition_list[["q59", "l"]] = "q60";
+transition_list[["q60", "u"]] = "q61";
+transition_list[["q61", "g"]] = "q62";
+transition_list[["q62", "z"]] = "q63";
+transition_list[["q63", "e"]] = "q64";
+transition_list[["q64", "u"]] = "q65";
+transition_list[["q56", "g"]] = "q58";
+transition_list[["q58", "#"]] = "ACCEPT";
+    
+// objek geld
+transition_list[["q52", "g"]] = "q79";
+transition_list[["q79", "e"]] = "q80";
+transition_list[["q80", "l"]] = "q78";
+transition_list[["q78", "d"]] = "q58";
+transition_list[["q58", "#"]] = "ACCEPT";
+
 
 const lexicalAnalyzer = () =>{
     var idx_char = 0;
